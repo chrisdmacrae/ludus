@@ -21,3 +21,13 @@ defaults:
   values:
     layout: page
 permalink: pretty
+markdown: kramdown
+gems:
+- octopress-minify-html
+- kramdown
+exclude:
+- Gemfile
+- package.json
+- "/node_modules/"
+- gulpfile.js
+- "/src/"

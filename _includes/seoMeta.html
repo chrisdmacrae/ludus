@@ -1,0 +1,65 @@
+{% comment %}
+  Social Graph Tags 
+  ---
+  This generates all of the meta tags for
+  Facebook, Twitter, etc. sharing. 
+{% endcomment %}
+{% capture title %}
+  {% if page.title %}
+    {{ page.title }}{% if page.title.length < 29 %}{{ site.meta.titleAfter}}{% endif %} 
+  {% else %}
+    {{ site.meta.title }}{{ site.meta.titleAfter }}
+  {% endif %}
+{% endcapture %}
+
+{% capture description %}
+  {% if page.meta.description %}{{ page.meta.description }}{% else %}{{ site.meta.description }}{% endif %}
+{% endcapture %}
+
+{% capture image %}
+  {% if page.meta.image %}
+    {{ page.meta.image }}
+  {% else if page.featuredImage %}
+    {{ page.featuredImage }}
+  {% else %}
+    {{ site.meta.image }}
+  {% endif %}
+{% endcapture %}
+
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}" />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{{ title }}">
+<meta itemprop="description" content="{{ description }}">
+<meta itemprop="image" content="{{ image }}">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.meta.twitter }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:creator" content="{{ site.meta.twitter }}">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="{{ site.meta.image }}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ site.meta.canonical }}{{ page.url }}" />
+<meta property="og:image" content="{{ site.meta.image }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:site_name" content="{{ site.meta.title }}{{ site.meta.titleAfter }}" />
+{% if page.publishTime %}
+  <meta property="article:published_time" content="{{ page.publishTime }}" />
+  <meta property="article:modified_time" content="{{ page.publishTime }}" />
+{% endif %}
+{% if page.category %}
+<meta property="article:section" content="{{ page.category }}" />
+{% endif %}
+{% if page.tags %}
+<meta property="article:tag" content="{{ page.tags|join: ', ' }}" />
+{% endif %}
+{% if site.meta.facebookID %}
+  <meta property="fb:admins" content="{{ site.meta.facebookID }}" />
+{% endif %}
