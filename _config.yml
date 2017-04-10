@@ -1,6 +1,12 @@
 ---
 title: Ludus
-timezone: UTC
+timezone: ADT
+meta:
+  title: Chris D. Macrae
+  titleAfter: " | Canadian Freelance Marketing Director"
+  description: 
+  canonical: https://chrisdmacrae.com
+  image: "/assets/img/logo.png"
 collections:
   posts:
     title: Posts
@@ -30,6 +36,7 @@ markdown: kramdown
 gems:
 - octopress-minify-html
 - kramdown
+- jekyll-sitemap
 exclude:
 - Gemfile
 - package.json
