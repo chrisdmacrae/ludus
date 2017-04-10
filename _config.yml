@@ -20,6 +20,12 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: '404.html'
+    type: pages
+  values:
+    permalink: "/:basename"
+permalink: pretty
 markdown: kramdown
 gems:
 - octopress-minify-html
@@ -30,3 +36,4 @@ exclude:
 - "/node_modules/"
 - gulpfile.js
 - "/src/"
+- firebase.json

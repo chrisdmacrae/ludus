@@ -1,4 +1,4 @@
-<header class="center w-100 mw-default ph3 pv3 pv4-ns ph4-m ph5-l {{ include.color | default: "bg-brand-yellow" }} cf" style="transition: background-color 0.5s ease-out;" id="nav">
+<header class="center w-100 mw-default ph3 pv3 pv4-ns ph4-m ph5-l {{ include.color | default: "bg-brand-yellow" }} cf" id="nav">
   <nav class="w-100 w-75-ns f6 f4-ns fw6 tc tl-ns fl"> 
   {% for item in site.data.nav %}
     <a href="{{ item.url }}" title="{{ item.title }}" class="link dim brand-teal dib mr3"{% if link.external == true %} target="_blank"{% endif %}>{{ item.text }}</a>
