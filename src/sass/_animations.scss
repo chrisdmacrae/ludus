@@ -1,0 +1,36 @@
+@keyframes rainbow {
+  0% {color: black;}
+  25% {color: yellow;}
+  50% {color: teal;}
+  100% {color: black;}
+}
+
+.anm-rainbow, .anm-rainbow-hover:hover {
+  animation: rainbow 3s;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); 
+  }
+  16% {
+    transform: scale(1.5);
+  }
+  33% {
+    transform: scale(1); 
+  }
+  49% {
+    transform: scale(1.5);
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+    color: var(--brand-black);
+  }
+}
+
+.anm-heartbeat, .anm-heartbeat-hover:hover {
+  animation: rainbow 3s infinite;
+}

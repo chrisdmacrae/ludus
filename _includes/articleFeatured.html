@@ -1,0 +1,14 @@
+<div class="mb3 mb4-ns">
+  {% if include.article.image %}
+   <div class="w-100">
+     <img src="{{ site.url }}{{ include.article.image }}" alt="Photo for {{ include.article.title }}" class="db w-100" />
+  </div>
+  {% endif %}
+  <div class="w-100 pa4 bg-brand-yellow">
+    <div class="f4 brand-black">
+      <h2 class="ma0 f4 f3-ns fw4 lh-title">{{ include.article.title }}</h2>
+      <p class="mt0 f5 f4-ns lh-copy brand-dark-yellow"><em>{{ include.article.subtitle }}</em></p>
+      <a href="{{ site.url }}{{ include.article.url }}" title="Continue reading {{ include.article.title }}" class="link dim">Continue reading →</a>
+    </div>       
+  </div>
+</div>

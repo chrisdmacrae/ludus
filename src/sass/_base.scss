@@ -1,0 +1,13 @@
+a:link, a:visited, a:active {
+  @extend .link;
+
+  color: var(--brand-teal);
+}
+
+.w-default {
+  width: 75rem;
+}
+
+.mw-default {
+  max-width: 75rem;
+}

@@ -1,0 +1,74 @@
+:root {
+  --brand-black: #0D0906;
+  --brand-brown: #544A2A;
+  --brand-yellow: #FFCA25;
+  --brand-dark-yellow: #675B37;
+  --brand-teal: #159C9C;
+  --brand-light-gray: #FAF7F7;
+  --brand-mid-gray: #F2F0F0;
+  --brand-dark-gray: #545454;
+}
+
+.brand-black {
+  color: var(--brand-black);
+}
+
+.bg-brand-black {
+  background-color: var(--brand-black);
+}
+
+.brand-brown {
+  color: var(--brand-brown);
+}
+
+.bg-brand-brown {
+  background-color: var(--brand-brown);
+}
+
+.brand-yellow {
+  color: var(--brand-yellow);
+}
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+
+.brand-dark-yellow {
+  color: var(--brand-dark-yellow);
+}
+
+.bg-brand-dark-yellow {
+  background-color: var(--brand-dark-yellow);
+}
+
+.brand-teal {
+  color: var(--brand-teal);
+}
+
+.bg-brand-teal {
+  background-color: var(--brand-teal);
+}
+
+.brand-light-gray {
+  color: var(--brand-light-gray);
+}
+
+.bg-brand-light-gray {
+  background-color: var(--brand-light-gray);
+}
+
+.brand-mid-gray {
+  color: var(--brand-mid-gray);
+}
+
+.bg-brand-mid-gray {
+  background-color: var(--brand-mid-gray);
+}
+
+.brand-dark-gray {
+  color: var(--brand-dark-gray);
+}
+
+.bg-brand-dark-gray {
+  background-color: var(--brand-dark-gray);
+}

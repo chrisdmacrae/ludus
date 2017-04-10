@@ -1,0 +1,21 @@
+<div class="w-100 cf"> 
+
+  <div class="w-50-l mhn3 mhn0-ns pl3-l pl4-l fr-l featuredWrapper">
+    {% for article in site.posts limit:2 %}
+      {% if article.featured == true %}
+        {% include articleFeatured.html article=article %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="w-100 w-50-l pr3-l pr4-l mt5 mt0-l fl-l">
+    <div class="mb4{% if loop.last != true %} bb b--black-10{% endif %}">
+      {% for article in site.posts limit:5 %}
+        {% if article.featured != true %}
+          {% include articleBasic.html article=article %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

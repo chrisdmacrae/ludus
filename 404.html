@@ -1,0 +1,30 @@
+---
+title: Page not found
+layout: nil
+---
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article" class="h-100">
+  {% include head.html %} 
+  <body class="avenir bg-brand-yellow h-100">
+    <div id="page" class="bg-brand-light-gray min-h-100">
+      {% include nav.html %}
+      <section class="relative center w-100 mw-default ph3 pv5 ph4-m pv5-l ph5-l bt b--black-10 bg-brand-mid-gray tc">
+        <img src="{{ site.url }}/assets/img/space.gif" alt="Lost in the void" class="center mw6 w-100 h-auto" />
+        <h1 className="lh-heading">404, page not found</h1>
+        <div class="f4 f3-l nested-copy nested-copy-line-height nested-headline nested-headline-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form">
+          <p>Sorry, one of us made a wrong move and got you lost in the void. 😳</p>
+        </div>
+      </section>
+      <section class="relative center w-100 mw-default ph3 pv5 ph4-m pv5-l ph5-l bt b--black-10 bg-brand-yellow" id="newsletter">
+        <h2 class="dib mt0 f3 f2-m f1-l fw4 f-underline lh-title">Work with me</h2>
+        <p class="db f3 mb4-ns lh-copy">
+          I help businesses & new entrepreneurs plan for the future. Through my patented research and discovery process, we'll discover how to take your idea from zero to one, and bring you success. Whether you're starting a new business, or have an idea for your exisitng business, I can help you achieve your goals.
+        </p>
+        <a href="https://business.chrisdmacrae.com" title="Go to business.chrisdmacrae.com"> 
+          <span class="dib f5 f4-l input-reset bn white bg-brand-black grow pa3 lh-solid w-auto mt2 mt0-l">Learn more about the Idea Inquest →</span>
+        </a>
+      </section>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

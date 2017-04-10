@@ -1,0 +1,8 @@
+---
+- url: "/#projects"
+  text: "Work"
+  title: "View Chris' work"
+- url: "mailto:hello@chrisdmacrae.com"
+  text: "Contact"
+  tite: "Send Chris an email"
+---

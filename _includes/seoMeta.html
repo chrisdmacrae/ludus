@@ -5,8 +5,10 @@
   Facebook, Twitter, etc. sharing. 
 {% endcomment %}
 {% capture title %}
-  {% if page.title %}
-    {{ page.title }}{% if page.title.length < 29 %}{{ site.meta.titleAfter}}{% endif %} 
+  {% if page.meta.title %}
+    {{ page.meta.title }}{% if page.meta.title.length < 30 %}{{ site.meta.titleAfter}}{% endif %} 
+  {% else if page.title %}
+    {{ page.title }}{% if page.title.length < 30 %}{{ site.meta.titleAfter}}{% endif %} 
   {% else %}
     {{ site.meta.title }}{{ site.meta.titleAfter }}
   {% endif %}

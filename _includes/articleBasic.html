@@ -1,0 +1,12 @@
+<article class="flex flex-column flex-row-ns f4 brand-black mb4">
+  <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+    <h2 class="mb0 f4 f3-ns fw4 lh-title">{{ include.article.title }}</h2>
+    <p class="mt0 f5 f4-ns lh-copy brand-dark-gray"><em>{{ include.article.subtitle }}</em></p>
+    <a href="{{ site.url }}{{ include.article.url }}" title="Continue reading {{ include.article.title }}" class="link dim">Continue reading →</a>
+  </div>
+  {% if include.article.image %}
+  <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+    <img src="{{ include.article.image }}" class="db" alt="Photo for {{ include.article.title }}" />
+  </div>
+  {% endif %}
+</article>

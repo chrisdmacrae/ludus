@@ -1,0 +1,30 @@
+<header class="relative center w-100 mw-default ph3 pv5 ph4-m pv5-l ph5-l bt b--black-10 bg-brand-yellow overflow-hidden overflow-visible-l" id="hero">
+  <h1 class="relative f3 f2-m fw4 f1-l lh-title z-2">
+    {{ include.title|markdownify }}
+  </h1>
+  {% if include.image %}
+    <img src="{{ site.url }}{{ include.image }}" alt="Hero image" width="668" class="absolute h-auto z-1" />
+  {% endif %}
+
+  {% if include.summaries %}
+    <div class="relative w-100 cf z-2">
+    {% for summary in include.summaries %}
+      <div class="w-100 w-33-l pa2-ns pl0-ns fl">
+        <p class="lh-copy brand-brown f4">
+          {{ summary }}
+        </p> 
+      </div>
+    {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if include.showSocial == true %}
+    <div class="relative w-100 mt4 mt6-ns z-2">
+    {% for network in site.data.social %}
+      <a href="{{ network.url }}" title="Follow him on {{ network.name }}" target="_blank" class="link dim db dib-ns mb4 f4{% if loop.last != true %} mr4{% endif %}">
+        Follow him on {{ network.name}} →
+      </a>
+    {% endfor %}
+    </div>
+  {% endif %}
+</header>

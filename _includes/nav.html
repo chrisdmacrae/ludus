@@ -1,0 +1,14 @@
+<header class="center w-100 mw-default ph3 pv3 pv4-ns ph4-m ph5-l {{ include.color | default: "bg-brand-yellow" }} cf" style="transition: background-color 0.5s ease-out;" id="nav">
+  <nav class="w-100 w-75-ns f6 f4-ns fw6 tc tl-ns fl"> 
+  {% for item in site.data.nav %}
+    <a href="{{ item.url }}" title="{{ item.title }}" class="link dim brand-teal dib mr3"{% if link.external == true %} target="_blank"{% endif %}>{{ item.text }}</a>
+  {% endfor %}
+  </nav>
+  <div class="relative w-25 dn db-ns fl">
+    <div class="absolute top-0 right-0 link dim dn dib-ns">
+      <a href="{{ site.url }}" title="Homepage" class="relative link dim brand-teal fw4">
+        <img src="{{ site.url }}/assets/img/logo.png" alt="Christophermac.me" />
+      </a>
+    </div>
+  </div>
+</header>

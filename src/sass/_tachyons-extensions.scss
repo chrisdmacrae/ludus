@@ -1,0 +1,110 @@
+/**
+  *
+  * Additional utility classes that follow the
+  * tachyons format belong here.
+  *
+  **/
+
+@mixin breakpoints($name) {
+  .#{$name} {
+    @content;
+  }
+
+  @media screen and (min-width: 30em) {
+    .#{$name}-ns {
+      @content;
+    }
+  }
+  
+  @media screen and (min-width: 45em ) and (max-width: 60em) {
+    .#{$name}-m {
+      @content;
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+    .#{$name}-l {
+      @content;
+    }
+  }
+}
+
+@include breakpoints("bg-transparent") {
+  background-color: transparent;
+}
+
+@include breakpoints("bg-attachment--fixed") {
+  background-attachment: fixed;
+}
+
+@include breakpoints('ts1') { text-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.25); }
+@include breakpoints('ts2') { text-shadow: 0.75rem 0.75rem 0.5rem rgba(0,0,0,0.25); }
+@include breakpoints('ts3') { text-shadow: 1rem 1rem 0.5rem rgba(0,0,0,0.25); }
+@include breakpoints('ts4') { text-shadow: 1.5rem 1.5rem 0.5rem rgba(0,0,0,0.25); }
+@include breakpoints('ts5') { text-shadow: 2rem 2rem 0.5rem rgba(0,0,0,0.25); }
+@include breakpoints('ts0') { text-shadow: 0px 0px 0px rgba(0,0,0,0.25); }
+
+@include breakpoints('grayscale') {
+  filter: grayscale(100%);
+}
+
+@include breakpoints('blur') {
+  filter: blur(10px);
+}
+
+%arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.arrow-up {
+  @extend %arrow;
+
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-bottom-color: initial;
+}
+
+.arrow-right {
+  @extend %arrow;
+
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-width: 5px;
+  border-left-color: initial;
+}
+
+.arrow-down {
+  @extend %arrow;
+
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-top-color: initial;
+}
+
+.arrow-left {
+  @extend %arrow;
+
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-right-color: initial;
+}
+
+@include breakpoints('f-underline') {
+  position: relative;
+
+  &:after {
+    content: '';
+    background-image: url('../img/underline.svg');
+    background-repeat: repeat-x;
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin-top: 0.5rem;
+  }
+}

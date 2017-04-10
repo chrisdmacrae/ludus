@@ -20,7 +20,6 @@ defaults:
     type: pages
   values:
     layout: page
-permalink: pretty
 markdown: kramdown
 gems:
 - octopress-minify-html
