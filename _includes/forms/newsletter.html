@@ -1,10 +1,10 @@
 {% assign inputClasses = "border-box dib f5 f4-l input-reset bn black-50 bg-brand-mid-gray pa3 lh-solid w-100 w-25-l mt2 mt0-l mr2-ns" %}
 {% assign buttonClasses = "dib f5 f4-l input-reset bn brand-dark-yellow bg-brand-yellow grow pa3 lh-solid w-100 w-25-l mt2 mt0-l" %}
 <form action="https://www.getdrip.com/forms/73538499/submissions" method="post" data-drip-embedded-form="73538499" class="w-100 bg-white">
-  <h2 class="dib mt0 f3 f2-m f1-l fw4 f-underline lh-title">Stay in the loop</h2>
-  <p class="f4 f3-ns mb4-ns"><strong>Join my monthly newsletter</strong> for regular updates on my open-source projects, writing, reading and resource lists.</p>
+  <h2 class="dib mt0 f3 f2-m f1-l fw4 f-underline lh-title" data-drip-attribute="headline">Stay in the loop</h2>
+  <p class="f4 f3-ns mb4-ns" data-drip-attribute="description">Get the Bullet Blast, my monthly newsletter. Once a month, I send out a short 2 minute read in bullet format with all of my learning, insights, and more. It will help you be a better professional, and help you find cool stuff!</p>
   <input type="text" required="true" name="fields[fname]" placeholder="What's your first name?" class="{{ inputClasses }}" />
   <input type="email" required="true" name="fields[email]" placeholder="And your email?" class="{{ inputClasses }}" />
-  <button type="submit" class="{{ buttonClasses }}" data-drip-attribute="sign-up-button">Stay in the loop →</button>
+  <button type="submit" name="submit" class="{{ buttonClasses }}" data-drip-attribute="sign-up-button">Stay in the loop →</button>
 </form>
 
