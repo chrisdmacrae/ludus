@@ -1,0 +1,33 @@
+---
+pages:
+- thank-you.markdown
+- privacy-policy.markdown
+- index.markdown
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: textarea
+  hidden: false
+  default: ''
+- name: summaries
+  label: Summaries
+  type: list
+  hidden: false
+  default: ''
+- name: meta
+  label: Meta
+  type: field_group
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: page

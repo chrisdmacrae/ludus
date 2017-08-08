@@ -1,0 +1,25 @@
+---
+pages:
+- 404.html
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: page
+- name: sitemap
+  label: Sitemap
+  type: boolean
+  hidden: false
+  default: ''
+- name: permalink
+  label: Permalink
+  type: text
+  hidden: false
+  default: "/:basename"
