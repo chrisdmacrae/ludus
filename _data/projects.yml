@@ -2,4 +2,22 @@
 - title: Ludus
   description: "**Ludus** is my personal website, open-sourced. (You're here!)"
   url: https://github.com/chrisdmacrae/ludus
+- title: Front Matter Manipulator
+  description: A tool for doing bulk operations on front matter documents.
+  url:https://chrisdmacrae.github.io/front-matter-manipulator/
+- title: Atomic Algolia
+  description: An NPM package that allows you to atomic updates to your Algolia indices. Guaranteed to use the *least amount of operations* and ensures your indices are never out of sync with your content.
+  url: https://github.com/chrisdmacrae/atomic-algolia
+- title: Serverless Atomic Algolia
+  description: A Serverless function for asynchronously updating Algolia indices from a JSON endpoint.
+  url: https://github.com/forestryio-templates/serverless-atomic-algolia
+- title: Outgoing Webhooks for Forestry.io
+  description: A set of [WebTask functions](https://webtask.io) for triggering third-party services using (Forestry.io's)[https://forestry.io] outgoing webhooks.
+  url: https://github.com/chrisdmacrae/webtask-forestryio-outgoing-webhook
+- title: Docker Wordpress
+  description: A fully-dockerized Wordpress development environment with support for production deploys using Docker Swarm. A better way to build Wordpress sites. 🚀
+  url: https://github.com/chrisdmacrae/docker-wordpress
+- title: Modular Web
+  description: A lightweight Gulp pipeline using Webpack, PostCSS, and CSSModules for building static web pages.
+  url: https://github.com/chrisdmacrae/modular-web
 ---
