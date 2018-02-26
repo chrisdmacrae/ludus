@@ -34,9 +34,8 @@ defaults:
 permalink: pretty
 markdown: kramdown
 gems:
-- octopress-minify-html
-- kramdown
 - jekyll-sitemap
+- jekyll-feed
 exclude:
 - Gemfile
 - package.json
