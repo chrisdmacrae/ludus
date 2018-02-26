@@ -48,7 +48,7 @@ gulp.task('jekyll-serve', ['process'], function (done) {
 gulp.task('jekyll-build', ['process'], () => {
   browserSync.notify(messages.jekyllBuild);
   const jekyll = child.spawn('jekyll', ['build',
-    '--config=_config.yml,_config_prod.yml',
+    '--config=_config.yml',
   ]);
 
   const jekyllLogger = (buffer) => {
