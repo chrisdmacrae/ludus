@@ -5,3 +5,4 @@
 .firebaserc
 firebase.json
 _config_*
+package-lock.json
