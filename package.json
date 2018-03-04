@@ -15,7 +15,7 @@
   "author": "@chrisdmacrae",
   "license": "ISC",
   "homepage": "https://bitbucket.org/chrisdmacrae/avis#readme",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^2.14.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
