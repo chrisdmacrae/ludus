@@ -13,10 +13,11 @@
       {% if site.data.projects %}
       <section class="relative center w-100 mw-default ph3 pv5 ph4-m pv5-l ph5-l bt b--black-10 bg-brand-mid-gray" id="projects">
         <h2 class="dib mt0 f3 f2-m f1-l fw4 f-underline lh-title">My Projects</h2>
-        <div class="w-100 cf">
+        <div class="w-100 flex flex-wrap cf">
 
           {% for project in site.data.projects %}
-          <div class="w-50-l fl-l{% cycle ' mr4-l', '' %}">
+          <div class="mb5 w-50-l fl-l{% cycle ' pr2-l', ' pl2-l' %}">
+            <h2 class="dib mt0 mb2 f3 fw4 f-underline lh-heading brand-dark-gray">{{ project.title }}</h2>
             <div class="mt0 f4 lh-copy brand-dark-gray">{{ project.description|markdownify }}</div>
             <a href="{{ project.url }}" title="View {{ project.title }}" target="_blank" class="link dim db mt4 f4">Check it out →</a>
           </div>

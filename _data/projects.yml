@@ -16,7 +16,7 @@
   title: "Serverless Atomic Algolia"
   url: "https://github.com/forestryio-templates/serverless-atomic-algolia"
 - 
-  description: "A set of [WebTask functions](https://webtask.io) for triggering third-party services using (Forestry.io's)[https://forestry.io] outgoing webhooks."
+  description: "A set of [WebTask functions](https://webtask.io) for triggering third-party services using [Forestry.io's](https://forestry.io) outgoing webhooks."
   title: "Outgoing Webhooks for Forestry.io"
   url: "https://github.com/chrisdmacrae/webtask-forestryio-outgoing-webhook"
 - 

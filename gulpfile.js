@@ -27,7 +27,7 @@ gulp.task('jekyll-serve', ['process'], function (done) {
   browserSync.notify(messages.jekyllServe);
   const jekyll = child.spawn( 'jekyll' , ['serve',
     '--watch',
-    '--incremental',
+    // '--incremental',
     '--drafts',
     '--config=_config.yml,_config_dev.yml'
   ]);
